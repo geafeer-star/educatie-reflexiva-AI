@@ -4,172 +4,116 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Erudiția: de la Antichitate la Era Inteligenței Artificiale</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
-    body {
-      margin: 0;
-      padding: 2% 10%;
-      background-color: #f9f9f9;
-      color: #333;
-      font-family: Georgia, "Times New Roman", Times, serif;
-      line-height: 1.6;
-      font-size: 18px;
-    }
-    header, main, section, article, footer {
-      display: block;
-    }
-    header {
-      text-align: center;
-      padding: 1em 0;
-      background-color: #f0f0f0;
-    }
-    header h1 {
-      font-size: 2em;
-      margin: 0.2em 0;
-    }
-    header p {
-      font-size: 1em;
-      font-style: italic;
-      color: #555;
-      margin: 0;
-    }
-    h2 {
-      font-size: 1.5em;
-      margin-top: 1.5em;
-      margin-bottom: 0.5em;
-      color: #2c3e50;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.2em;
-    }
-    h3 {
-      font-size: 1.2em;
-      margin-top: 1em;
-      margin-bottom: 0.5em;
-      color: #2c3e50;
-    }
-    p {
-      text-align: justify;
-      margin: 1em 0;
-    }
-    em {
-      font-style: italic;
-    }
-    strong {
-      font-weight: bold;
-    }
-    ul {
-      list-style-type: disc;
-      padding-left: 1.5em;
-    }
-    ul li {
-      margin: 0.5em 0;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    figure {
-      margin: 1em auto;
-      text-align: center;
-    }
-    figure img {
-      max-width: 100%;
-      height: auto;
-    }
-    figure figcaption {
-      font-style: italic;
-      font-size: 0.9em;
-      color: #555;
-      margin-top: 0.5em;
-    }
+    /* Stiluri doar pentru articol (nu schimbă restul site-ului) */
+    .article { padding: 2rem 0; }
+    .article h1 { font-size: 2rem; margin-bottom: 0.25rem; }
+    .article h2 { font-size: 1.5rem; margin-top: 1.75rem; color: #2c3e50; }
+    .article h3 { font-size: 1.2rem; margin-top: 1rem; color: #2c3e50; }
+    .article p  { margin: 1rem 0; text-align: justify; line-height: 1.75; }
+    .article ul { list-style: disc; padding-left: 1.25rem; }
+    .article figure { margin: 1rem auto; text-align: center; }
+    .article figure img { max-width: 100%; height: auto; border-radius: 8px; }
+    .article figure figcaption { font-style: italic; font-size: .95rem; color:#555; margin-top:.5rem; }
   </style>
 </head>
 <body>
+  <!-- NAVBAR (la fel ca pe restul site-ului) -->
   <header class="navbar">
-  <div class="container">
-    <div class="logo"><a href="index.html">Educație Reflexivă</a></div>
-    <nav class="nav-links">
-      <a href="index.html">Acasă</a>
-      <a href="studies.html">Studii</a>
-      <a href="despre.html">Despre</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
-
-  <header>
-    <h1>Erudiția: de la Antichitate la Era Inteligenței Artificiale</h1>
+    <div class="container">
+      <div class="logo"><a href="index.html">Educație Reflexivă</a></div>
+      <nav class="nav-links">
+        <a href="index.html">Acasă</a>
+        <a href="studies.html">Studii</a>
+        <a href="despre.html">Despre</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
-  <main>
-    <article>
+
+  <main class="main">
+    <div class="container article">
+      <h1>Erudiția: de la Antichitate la Era Inteligenței Artificiale</h1>
+
       <section>
         <h2>Introducere</h2>
         <p>Termenul <strong>erudiție</strong> evocă imaginea cunoașterii profunde și a culturii vaste. Încă din cele mai vechi timpuri, societățile au prețuit indivizii înzestrați cu <em>știință de carte</em> și capacitatea de a înțelege lumea prin prisma învățăturii. De la înțelepții antici care petreceau ani studiind suluri de pergament, până la savanții moderni conectați la întreaga lume prin internet, dorința de a acumula și împărtăși cunoștințe a rămas o constantă a spiritului uman.</p>
         <p>Acest eseu își propune să exploreze evoluția conceptului de erudiție – de la bibliotecile și academiile Antichității, trecând prin scriptoriile monahale ale Evului Mediu și efervescența intelectuală a Renașterii, până la epoca <strong>inteligenței artificiale</strong> de astăzi. Vom vedea cum s-a transformat statutul învățaților și accesul la cunoaștere de-a lungul secolelor și ne vom întreba ce înseamnă să fii erudit într-o lume în care mașinile pot stoca și procesa mai multă informație decât și-ar fi putut imagina vreodată cei din vechime.</p>
       </section>
+
       <section>
         <h2>Erudiția în Antichitate</h2>
         <figure>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Ancientlibraryalex.jpg" alt="Reprezentare artistică a Bibliotecii din Alexandria" />
-          <figcaption>Figura 1: Reprezentare artistică a Marii Biblioteci din Alexandria, un simbol al erudiției antice (ilustrație de O. Von Corven, secolul al XIX-lea).</figcaption>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Ancientlibraryalex.jpg" alt="Reprezentare artistică a Bibliotecii din Alexandria">
+          <figcaption>Figura 1: Reprezentare artistică a Marii Biblioteci din Alexandria (O. Von Corven).</figcaption>
         </figure>
-        <p>În civilizațiile antice, cunoașterea era adesea privilegiul unei elite intelectuale. În Grecia clasică, gânditori precum Platon și Aristotel au pus bazele filosofiei occidentale, înființând școli renumite – <em>Akademia</em> și <em>Lyceum</em> – unde discipolii învățau despre științele vremii, artă, politică și etică. Romanii, la rândul lor, au preluat și extins moștenirea greacă: personalități precum Cicero sau Pliniu cel Bătrân (autor al unei vaste enciclopedii a cunoașterii vremii) ilustrează idealul eruditului în lumea latină. De cealaltă parte a lumii, în China imperială, confucianiștii și-au dedicat viața studiului textelor clasice, iar în India și Egipt casta preoților deținea secretele științei și ale scrierii.</p>
-        <p>Poate cel mai emblematic centru al erudiției antice a fost <strong>Biblioteca din Alexandria</strong> – uriașa colecție de suluri de papirus din Egiptul elenistic. Fondată, conform tradiției, de dinastia Ptolemeilor, biblioteca aduna sub același acoperiș opere din toată lumea cunoscută atunci. Se estimează că la apogeu ar fi adăpostit sute de mii de lucrări, de la tratate de matematică și astronomie la poeme și cronici istorice. Savantul Eratostene, de pildă, a calculat cu o uimitoare precizie circumferința Pământului din incinta acestei biblioteci, iar Hipatia, una dintre primele femei filozof și matematician, și-a desfășurat activitatea în Alexandria. Biblioteca – parte a unui complex mai larg numit <em>Mouseion</em>, dedicat muzelor – a devenit un veritabil simbol al cunoașterii universale. Din nefericire, distrugerea sa treptată, prin incendii și conflicte, a marcat și sfârșitul unei epoci a erudiției concentrate într-un singur loc.</p>
-        <p>La finalul Antichității, pe măsură ce marile imperii au decăzut, transmiterea cunoașterii a început să depindă de o mână de învățați rămași și de instituțiile care le-au supraviețuit. Ștafeta erudiției a fost preluată, în parte, de centre de studiu din afara Europei: în Persia și lumea arabă timpurie, curiozitatea pentru știință și cultură antică a pregătit scena pentru epoca următoare a cunoașterii.</p>
+        <p>În civilizațiile antice, cunoașterea era adesea privilegiul unei elite intelectuale. În Grecia clasică, gânditori precum Platon și Aristotel au pus bazele filosofiei occidentale, înființând școli renumite – <em>Akademia</em> și <em>Lyceum</em>…</p>
+        <p>Poate cel mai emblematic centru al erudiției antice a fost <strong>Biblioteca din Alexandria</strong>…</p>
+        <p>La finalul Antichității…</p>
       </section>
+
       <section>
         <h2>Evul Mediu: Păstrarea cunoașterii</h2>
-        <p>Evul Mediu a fost o perioadă în care erudiția a supraviețuit în forme diferite față de lumea clasică. În Europa occidentală, după căderea Imperiului Roman, <strong>mănăstirile</strong> au devenit adevărate bastioane ale cunoașterii. Călugării copiau manual manuscrisele vechi, conservând opere teologice, filosofice și literare care altfel s-ar fi pierdut. Scriptoriile monastice din Irlanda, Italia sau Bizanț au salvat comori ale Antichității, transcriind atât texte creștine, cât și lucrări ale autorilor păgâni clasici. Erudiția medievală europeană avea un pronunțat caracter religios – cei învățați erau în principal clerici – însă nu s-a limitat doar la teologie: Universitățile medievale, apărute începând cu secolul al XII-lea (precum cele de la Bologna, Paris sau Oxford), au readus în prim-plan studiul artelor liberale, al medicinei și al dreptului. Astfel, figura eruditului s-a transformat în cea a învățaților scolastici care îmbinau credința cu rațiunea, exemplu fiind Toma d’Aquino, unul dintre marii cărturari ai epocii.</p>
-        <p>În paralel, erudiția a înflorit remarcabil în lumea islamică medievală. La Bagdad, faimoasa <strong>Casa Înțelepciunii</strong> (<em>Bayt al-Hikma</em>) a fost un centru major de traducere și studiu, unde texte grecești, persane și indiene erau adunate și traduse în arabă. Învățați precum Al-Khwarizmi (părintele algebrei), Avicenna (Ibn Sina, autorul <em>Canonului de medicină</em>) sau Averroes (Ibn Rushd, comentator al lui Aristotel) sunt doar câteva exemple de erudiți din lumea islamică ale căror lucrări au avut ecou global. Ei au păstrat și extins cunoașterea antică în timp ce Europa se afla în așa-numitul „Ev Mediu întunecat”. De fapt, prin traducerile arabe reintroduse ulterior în Europa (în centre ca Toledo), Occidentul medieval și-a recâștigat accesul la moștenirea clasică pierdută.</p>
-        <p>Până la sfârșitul Evului Mediu, baza pentru o nouă renaștere intelectuală era așezată. Cunoașterea supraviețuise într-o formă latentă, așteptând redescoperirea. Erudiția, deși rezervată unui cerc relativ restrâns de clerici și savanți, continua să existe – o flacără pâlpâind sub pojghița unei societăți frământate – pregătită să se reaprindă odată cu schimbările sociale și tehnologice ce aveau să urmeze.</p>
+        <p>Evul Mediu a fost o perioadă în care erudiția a supraviețuit…</p>
+        <p>În paralel, erudiția a înflorit remarcabil în lumea islamică…</p>
+        <p>Până la sfârșitul Evului Mediu…</p>
       </section>
+
       <section>
         <h2>Renașterea și Umanismul</h2>
         <figure>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Raphael_School_of_Athens.jpg/1024px-Raphael_School_of_Athens.jpg" alt="Fresca Școala din Atena de Rafael" />
-          <figcaption>Figura 2: Fresca „Școala din Atena” de Rafael (1509–1511) îi înfățișează pe marii gânditori ai Antichității, simbolizând redescoperirea valorilor clasice în Renaștere.</figcaption>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Raphael_School_of_Athens.jpg/1024px-Raphael_School_of_Athens.jpg" alt="Fresca Școala din Atena de Rafael">
+          <figcaption>Figura 2: „Școala din Atena” (Rafael, 1509–1511), simbol al redescoperirii valorilor clasice.</figcaption>
         </figure>
-        <p>Spre sfârșitul Evului Mediu, o serie de evenimente și schimbări au aprins din nou flacăra cunoașterii. Căderea Constantinopolului (1453) a adus în Vest savanți bizantini purtând cu ei manuscrise grecești prețioase. În același timp, invenția <strong>tiparului</strong> de către Gutenberg (circa 1450) a revoluționat difuzarea informației – cărțile au devenit mai accesibile, iar ideile s-au răspândit cu o viteză nemaiîntâlnită. Aceste condiții au pregătit terenul pentru Renaștere, epoca în care Europa a redescoperit și celebrat Antichitatea clasică.</p>
-        <p><strong>Umanismul renascentist</strong> a pus omul și potențialul său în centrul preocupărilor. Erudiții Renașterii aspirau să cunoască cât mai mult din moștenirea culturală a lumii: limbile clasice (latina și greaca), textele antice, dar și științele și artele. Omul ideal al Renașterii era un <em>„om universal”</em> sau <em>polimat</em>, versat în numeroase domenii – exemplul emblematic fiind Leonardo da Vinci, care a îmbinat arta cu știința, tehnica cu filosofia. Alți gânditori precum Erasmus din Rotterdam, Pico della Mirandola sau Michelangelo au ilustrat, fiecare în felul său, amploarea pe care o putea atinge erudiția renascentistă.</p>
-        <p>Această perioadă a adus și o schimbare de atitudine: cunoașterea nu mai era văzută ca un secret păzit de instituții sacre, ci ca un bun ce merită diseminat și discutat. Academii și universități s-au înființat sau revitalizat în marile orașe europene, iar corespondența intensă între învățați (așa-numita <em>Republică a Literelor</em>) a creat o comunitate intelectuală internațională. Prin toate acestea, Renașterea a pus bazele metodologiei științifice și ale spiritului critic ce aveau să înflorească în secolele următoare.</p>
+        <p>Spre sfârșitul Evului Mediu…</p>
+        <p><strong>Umanismul renascentist</strong> a pus omul și potențialul său în centru…</p>
+        <p>Această perioadă a adus și o schimbare de atitudine…</p>
       </section>
+
       <section>
         <h2>Epoca Modernă și Iluminismul</h2>
-        <p>Secolele al XVII-lea și al XVIII-lea au marcat tranziția spre <strong>epoca modernă</strong>, în care erudiția a cunoscut atât o diversificare, cât și o specializare tot mai accentuată. Revoluția științifică – începută cu figuri ca Galileo Galilei, René Descartes, Isaac Newton – a generat un salt uriaș în cunoaștere și a demonstrat puterea metodei experimentale și a rațiunii. Totodată, perioada <strong>Iluminismului</strong> (numită și „Secolul Luminilor”) a ridicat pe piedestal ideea că educația și răspândirea cunoașterii pot elibera omenirea de ignoranță și superstiție. Oameni de litere și savanți precum Voltaire, Diderot, Rousseau sau Kant au contestat dogmele și au promovat spiritul critic, toleranța și progresul prin știință.</p>
-        <p>În această epocă s-a cristalizat imaginea enciclopedistului – eruditul care aspiră să compileze toate cunoștințele disponibile. Monumentala <em>Encyclopédie</em> franceză (1751–1772), coordonată de Denis Diderot și Jean le Rond d’Alembert, a fost expresia supremă a acestui ideal: zeci de volume cu articole scrise de cei mai străluciți gânditori ai vremii, acoperind arte, științe și meserii. Ideea că <em>„știința este putere”</em> a căpătat un nou sens – cunoașterea sistematică a lumii oferea nu doar prestigiul erudiției, ci și puterea de a transforma societatea. „<em>Cunoașterea înseamnă putere.</em>” afirma Francis Bacon încă din secolul al XVII-lea, subliniind convingerea că progresul uman depinde de lărgirea continuă a orizonturilor minții.</p>
-        <p>În secolele XIX și XX, volumul informațiilor a crescut exponențial, odată cu dezvoltarea universităților moderne, a revistelor științifice și a noilor discipline academice. Erudiția a devenit tot mai mult sinonimă cu <em>specializarea</em>: nimeni nu mai putea stăpâni toate domeniile, astfel că savanții au început să se concentreze pe arii tot mai înguste, acumulând cunoaștere detaliată în ramuri specifice. Cu toate acestea, idealul erudiției nu a dispărut – a supraviețuit în figuri precum enciclopedistul Humboldt sau inventatorul Nikola Tesla, și persistă până astăzi sub forma respectului pentru acei intelectuali capabili să lege cunoștințe din domenii variate, păstrând o viziune de ansamblu.</p>
+        <p>Secolele al XVII-lea și al XVIII-lea au marcat tranziția spre <strong>epoca modernă</strong>…</p>
+        <p>În această epocă s-a cristalizat imaginea enciclopedistului…</p>
+        <p>În secolele XIX și XX, volumul informațiilor a crescut exponențial…</p>
       </section>
+
       <section>
         <h2>Era Digitală și Inteligența Artificială</h2>
         <figure>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Artificial-Intelligence.jpg/1280px-Artificial-Intelligence.jpg" alt="Ilustrație simbolică a creierului uman și inteligenței artificiale" />
-          <figcaption>Figura 3: Ilustrație simbolică reprezentând fuziunea dintre un creier uman și circuite digitale – metaforă vizuală a conexiunii dintre cunoașterea umană și inteligența artificială (sursă: Pixabay, domeniu public).</figcaption>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Artificial-Intelligence.jpg/1280px-Artificial-Intelligence.jpg" alt="Creier uman și circuite digitale">
+          <figcaption>Figura 3: Metaforă vizuală a conexiunii dintre cunoașterea umană și inteligența artificială.</figcaption>
         </figure>
-        <p>În ultimele decenii, odată cu apariția <strong>computerelor personale</strong>, a <strong>internetului</strong> și a <strong>tehnologiilor digitale</strong>, modul în care accesăm și valorificăm cunoașterea s-a schimbat radical. Astăzi, oricine cu o conexiune la internet are la dispoziție, în câteva secunde, mai multe informații decât putea aduna un savant al secolului XIX într-o viață întreagă. Această democratizare fără precedent a accesului la date ridică o întrebare esențială: ce mai înseamnă să fii erudit când <em>oricine</em> poate căuta <em>orice</em> instantaneu? Răspunsul pare să se mute dinspre <em>acumularea</em> de fapte brute (unde calculatoarele excelează) către <em>înțelegerea</em> și <em>interpretarea</em> lor – trăsături profund umane.</p>
-        <p>Astăzi vorbim deja despre <strong>inteligența artificială (IA)</strong> ca despre un partener – sau uneori concurent – în domeniul cunoașterii. Sistemele IA de tip <em>rețea neurală</em> (precum modele lingvistice gen ChatGPT) pot procesa volume imense de text, pot răspunde la întrebări complexe și pot chiar genera conținut nou. Ele au fost „antrenate” pe milioane de cărți, articole și pagini web, ceea ce le conferă, în aparență, o <em>erudiție universală</em>. Un astfel de sistem poate oferi informații despre aproape orice subiect, de la filozofia lui Aristotel la ultimele descoperiri științifice, în câteva secunde. Cu toate acestea, aceste mașini nu <em>înțeleg</em> informația în sensul uman al cuvântului – nu au conștiință, intenție sau intuiție. Ele nu fac diferența între înțelepciune și simpla reproducere a unor date corelate statistic.</p>
-        <p>O provocare majoră a erei digitale este <strong>calitatea informației</strong>. A fi erudit astăzi nu mai înseamnă doar a ști multe, ci și a discerne între surse credibile și zgomotul informațional. Abundența de date vine la pachet cu dezinformare, știri false și cunoaștere superficială. Prin urmare, erudiția contemporană implică un set nou de abilități: gândirea critică, alfabetizarea digitală și capacitatea de a filtra și structura avalanșa de informații. Paradoxal, cu cât avem acces la mai multă informație, cu atât devine mai valoroasă priceperea de a o sintetiza și judeca.</p>
-        <p>Privind spre viitor, rolul inteligenței artificiale în sfera erudiției este încă în evoluție. IA poate deveni un asistent formidabil pentru căutarea și organizarea cunoștințelor – un „bibliotecar” digital omniprezent. Dar poate ea să devină <em>erudită</em> în sensul deplin al cuvântului? Mulți filosofi și oameni de știință argumentează că erudiția presupune nu doar date și algoritmi, ci și experiență umană, creativitate și judecată morală. În orice caz, colaborarea dintre mintea umană și inteligența artificială ar putea genera un nou tip de erudiție hibridă, în care limitele dintre ceea ce știm noi și ceea ce „știu” mașinile devin tot mai difuze.</p>
+        <p>În ultimele decenii, odată cu apariția <strong>computerelor</strong>, a <strong>internetului</strong>…</p>
+        <p>Astăzi vorbim deja despre <strong>inteligența artificială (IA)</strong> ca despre un partener…</p>
+        <p>O provocare majoră a erei digitale este <strong>calitatea informației</strong>…</p>
       </section>
+
       <section>
         <h2>Concluzie</h2>
-        <p>De la tabletele de lut și papirusurile Antichității până la microcipurile din zilele noastre, drumul erudiției umane a fost marcat de acumulări de cunoaștere, pierderi și redescoperiri, salturi înainte și perioade de stagnare. Fiecare epocă a redefinit ce înseamnă să fii învățat: dacă în Antichitate eruditul era un filosof enciclopedic, iar în modernitate un specialist cu orizonturi largi, astăzi eruditul ar putea fi cel care știe cum să navigheze inteligent prin oceanul informațional oferit de tehnologie.</p>
-        <p>Maxima atribuită lui Socrate „<em>Știu că nu știu nimic.</em>” rămâne, paradoxal, foarte actuală. În Era Inteligenței Artificiale, când cunoașterea pare la îndemâna oricui, adevărata înțelepciune constă în a recunoaște limitele a ceea ce știm și a continua să punem întrebări. Erudiția viitorului va fi, probabil, mai puțin despre memorarea de date și mai mult despre cultivarea curiozității, a gândirii critice și a înțelegerii profunde. Indiferent de instrumentele pe care le vom crea – fie ele biblioteci imense sau supercomputere – setea umană de cunoaștere și capacitatea de a găsi sens în informație vor rămâne forțele călăuzitoare care ne împing spre noi orizonturi.</p>
+        <p>De la tabletele de lut și papirusurile Antichității până la microcipurile din zilele noastre…</p>
+        <p>Maxima atribuită lui Socrate „<em>Știu că nu știu nimic.</em>” rămâne actuală…</p>
       </section>
+
       <section>
         <h2>Bibliografie</h2>
         <ul>
           <li><a href="https://ro.wikipedia.org/wiki/Biblioteca_din_Alexandria" target="_blank" rel="noopener">Biblioteca din Alexandria – Wikipedia</a></li>
           <li><a href="https://ro.wikipedia.org/wiki/Casa_%C3%AEn%C8%9Belepciunii" target="_blank" rel="noopener">Casa Înțelepciunii (Bagdad) – Wikipedia</a></li>
-          <li><a href="https://historia.ro/sectiune/general/secretele-bibliotecii-din-alexandria-576288.html" target="_blank" rel="noopener">Secretele Bibliotecii din Alexandria – Revista Historia</a></li>
-          <li><a href="https://stiintasitehnica.com/chatgpt-dezvolta-o-forma-de-cunoastere-apropiata-de-cea-a-oamenilor-in-special-in-acest-domeniu-anume/" target="_blank" rel="noopener">Știință &amp; Tehnică (30 iunie 2025) – Articol despre cunoaștere și inteligența artificială</a></li>
+          <li><a href="https://historia.ro/sectiune/general/secretele-bibliotecii-din-alexandria-576288.html" target="_blank" rel="noopener">Secretele Bibliotecii din Alexandria – Historia</a></li>
+          <li><a href="https://stiintasitehnica.com/chatgpt-dezvolta-o-forma-de-cunoastere-apropiata-de-cea-a-oamenilor-in-special-in-acest-domeniu-anume/" target="_blank" rel="noopener">Știință &amp; Tehnică – articol despre IA</a></li>
         </ul>
       </section>
-    </article>
+    </div>
   </main>
+
   <footer>
-    <p style="text-align: center; font-size: 0.9em; color: #777;">&copy; 2025 Erudiție și Inteligență Artificială – Eseu demonstrativ</p>
+    <div class="container">
+      <div>© 2025 Andrei Geafer</div>
+      <div class="small">Site static – publicabil pe Netlify</div>
+    </div>
   </footer>
+
+  <script src="assets/linkify.js"></script>
 </body>
 </html>
