@@ -63,3 +63,45 @@ footer .container{display:flex;justify-content:space-between;align-items:center;
 a{color:var(--brand);text-decoration:underline;word-break:break-word}
 article p{margin:.6em 0}
 .small{color:var(--muted);font-size:.9em}
+/* Casete pentru practici */
+.box {
+  border-radius: 10px;
+  padding: 1em 1.2em;
+  margin: 1.2em 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Variante de culoare */
+.box.blue {
+  background-color: #eaf4ff;
+  border-left: 6px solid #3498db;
+}
+
+.box.yellow {
+  background-color: #fff8e1;
+  border-left: 6px solid #f39c12;
+}
+
+.box.green {
+  background-color: #eafaf1;
+  border-left: 6px solid #27ae60;
+}
+
+/* Titlurile din box */
+.box strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  color: #2c3e50;
+}
+
+/* Listă mai aerisită în box */
+.box ul {
+  margin: 0.5em 0 0 1.2em;
+}
+
+.box ul li {
+  margin: 0.3em 0;
+}
