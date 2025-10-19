@@ -58,7 +58,43 @@
     <div class="container container--narrow">
       <div class="kicker">Raport comparativ</div>
       <h1 style="margin:10px 0 4px">Evaluarea formativă în învățământul gimnazial</h1>
-      <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgeafeer-star.github.io%2Feducatie-reflexiva-AI%2Fevaluare-formativa-gimnaziu.html&title=Vizite" alt="views"/>
+<div class="page-views">
+  <!-- iconiță "ochi" -->
+  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M1.5 12s3.75-7.5 10.5-7.5S22.5 12 22.5 12s-3.75 7.5-10.5 7.5S1.5 12 1.5 12Z" stroke="currentColor" stroke-width="1.5"/>
+    <circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="1.5"/>
+  </svg>
+  <span id="pv-count">—</span> vizualizări
+</div>
+
+<script>
+(function(){
+  // Namespace fix: folosește domeniul tău (rămâne așa)
+  const NS = 'geafeer-star.github.io';
+  // Cheie unică pe pagină (ex: /educatie-reflexiva-AI/eruditia-ia.html)
+  const key = (NS + location.pathname).toLowerCase().replace(/[^a-z0-9/_-]/g,'');
+  const el  = document.getElementById('pv-count');
+
+  const show = v => { if(el) el.textContent = Number(v||0).toLocaleString('ro-RO'); };
+
+  // Afișează valoarea curentă (fără increment)
+  fetch(`https://api.countapi.xyz/get/${NS}/${encodeURIComponent(key)}`)
+    .then(r=>r.json()).then(d=>show(d.value)).catch(()=>{});
+
+  // Incrementează cel mult o dată la 12h pe browser
+  const FLAG = 'pv-seen:'+key;
+  const last = Number(localStorage.getItem(FLAG) || 0);
+  const now  = Date.now();
+  const TWELVE_H = 12*60*60*1000;
+
+  if (!last || now - last > TWELVE_H) {
+    fetch(`https://api.countapi.xyz/hit/${NS}/${encodeURIComponent(key)}`)
+      .then(r=>r.json())
+      .then(d=>{ show(d.value); localStorage.setItem(FLAG, String(now)); })
+      .catch(()=>{});
+  }
+})();
+</script>
       <p class="meta">Lecții din <strong>Finlanda</strong>, <strong>Singapore</strong>, <strong>Canada</strong> și <strong>Estonia</strong></p>
     </div>
   </section>
