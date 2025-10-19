@@ -649,5 +649,62 @@
   </footer>
 
   <script src="linkify.js"></script>
+  <script>
+(function () {
+  // Folosește EXACT acest namespace (ai site-ul pe geafeer-star.github.io)
+  const NS = 'geafeer-star.github.io';
+
+  // Elementul unde scriem cifra
+  const numEl = document.getElementById('views-num');
+
+  // Cheie unică per pagină (normalizez / -> /index.html)
+  let path = location.pathname.replace(/\/$/, '/index.html');
+  const key = 'pv_' + path;
+  const visitedKey = 'pv_visited_' + key;
+
+  // Actualizează UI
+  function show(n) {
+    if (numEl) numEl.textContent = n.toLocaleString('ro-RO');
+  }
+
+  // API helpers
+  const api = {
+    get: () =>
+      fetch(`https://api.countapi.xyz/get/${encodeURIComponent(NS)}/${encodeURIComponent(key)}`)
+        .then(r => r.json()),
+    hit: () =>
+      fetch(`https://api.countapi.xyz/hit/${encodeURIComponent(NS)}/${encodeURIComponent(key)}`)
+        .then(r => r.json()),
+    create0: () =>
+      fetch(`https://api.countapi.xyz/create?namespace=${encodeURIComponent(NS)}&key=${encodeURIComponent(key)}&value=0`)
+  };
+
+  // 1) Afișează valoarea curentă (creează 0 dacă nu există)
+  api.get()
+    .then(d => {
+      if (typeof d.value === 'number') {
+        show(d.value);
+      } else {
+        return api.create0().then(() => show(0));
+      }
+    })
+    .catch(() => { /* ignorăm erorile tăcute */ });
+
+  // 2) Increment doar o dată / utilizator / pagină (TTL 30 zile)
+  const now = Date.now();
+  const ttlMs = 1000 * 60 * 60 * 24 * 30; // 30 zile
+  const last = Number(localStorage.getItem(visitedKey) || 0);
+
+  if (!last || (now - last) > ttlMs) {
+    api.hit()
+      .then(d => {
+        if (typeof d.value === 'number') show(d.value);
+        localStorage.setItem(visitedKey, String(now));
+      })
+      .catch(() => {});
+  }
+})();
+</script>
+
 </body>
 </html>
