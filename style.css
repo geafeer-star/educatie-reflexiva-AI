@@ -140,3 +140,14 @@ article p{margin:.6em 0}
   color:#6b7280; font-size:.95rem; margin:.5rem 0;
 }
 .page-views svg{ width:18px; height:18px; opacity:.9; }
+/* VIEWS COUNTER */
+.views {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  font-weight: 600;
+}
+
+.header-hero .views {
+  color: rgba(255,255,255,.9); /* alb semi-transp pt. background colorat */
+}
