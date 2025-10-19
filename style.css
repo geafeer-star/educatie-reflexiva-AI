@@ -135,3 +135,8 @@ article p{margin:.6em 0}
 @media (max-width: 420px){
   .cards{grid-template-columns:1fr}
 }
+.page-views{
+  display:flex; align-items:center; gap:.4rem;
+  color:#6b7280; font-size:.95rem; margin:.5rem 0;
+}
+.page-views svg{ width:18px; height:18px; opacity:.9; }
