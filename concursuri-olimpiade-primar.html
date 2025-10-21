@@ -12,6 +12,12 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Analiză a concursurilor și olimpiadelor la clasele primare: beneficii, riscuri psihologice și recomandări practice pentru echilibru." />
+<meta property="og:title" content="Concursuri și olimpiade la clasele primare – avantaje & riscuri" />
+<meta property="og:description" content="Beneficii, riscuri și recomandări pentru un echilibru sănătos la vârste mici." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://geafeer-star.github.io/educatie-reflexiva-AI/concursuri-olimpiade-primar.html" />
+
   <title>Concursuri și olimpiade la clasele primare – avantaje & riscuri</title>
   <link rel="stylesheet" href="style.css">
 
@@ -212,5 +218,24 @@ Aplicând aceste recomandări, școlile pot transforma concursurile din simple i
     });
   </script>
   <script src="linkify.js" defer></script>
+  <style>
+  .toc-wrap a.active{font-weight:700; color:var(--brand)}
+</style>
+
+<script>
+  // evidențiază secțiunea curentă în TOC
+  const secs = document.querySelectorAll('article .section');
+  const tocLinks = document.querySelectorAll('.toc-wrap a');
+  const obs = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        const id = '#'+e.target.id;
+        tocLinks.forEach(a=> a.classList.toggle('active', a.getAttribute('href')===id));
+      }
+    });
+  },{rootMargin:'-30% 0px -60% 0px', threshold:0.01});
+  secs.forEach(s=>obs.observe(s));
+</script>
+
 </body>
 </html>
