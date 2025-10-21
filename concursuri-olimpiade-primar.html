@@ -1,200 +1,180 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-<meta charset="UTF-8">
-<title>Concursuri și olimpiade școlare la clasele primare</title>
-<style>
-  html {
-    scroll-behavior: smooth;
-  }
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f6f6f6;
-    color: #333;
-  }
-  header {
-    background-color: #005b96;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  nav {
-    background: #03396c;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  nav li {
-    margin: 0;
-  }
-  nav a {
-    display: block;
-    padding: 15px 20px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  nav a:hover, nav a.active {
-    background-color: #011f4b;
-  }
-  section {
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: auto;
-  }
-  h2 {
-    color: #005b96;
-    margin-top: 60px;
-    text-align: center;
-  }
-  ul {
-    margin: 1em 0;
-    padding-left: 20px;
-  }
-  li {
-    margin-bottom: 0.5em;
-  }
-  button#topBtn {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    padding: 10px 15px;
-    background: #005b96;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none;
-  }
-  button#topBtn:hover {
-    background: #03396c;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Concursuri și olimpiade la clasele primare – efecte psihologice | Educație Reflexivă</title>
+  <meta name="description" content="Analiză despre concursuri și olimpiade la clasele primare: efecte pozitive, riscuri psihologice, impactul tehnologiei și recomandări practice." />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Stiluri specifice paginii (poți muta oricând în style.css) -->
+  <style>
+    .hero-mini{
+      background: radial-gradient(1200px 500px at 20% 0%, rgba(32,201,151,.20), transparent 60%),
+                  linear-gradient(135deg, #0d6efd 0%, #13c3b0 60%, #7ae1d0 100%);
+      color:#eaf6ff;border-bottom:1px solid var(--border);
+      padding:54px 0
+    }
+    .hero-mini h1{margin:.2em 0 .1em;font-size:clamp(26px,3.6vw,40px);text-align:center}
+    .hero-mini .lead{opacity:.92;text-align:center}
+    .toc{background:#fff;border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow);padding:16px}
+    .toc h3{margin:.2em 0 .4em}
+    .pill-views{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border:1px solid var(--border);border-radius:999px;background:#fff;box-shadow:var(--shadow);color:var(--muted);font-size:.95rem}
+    .pill-views svg{width:18px;height:18px}
+    .pro{background:#eafaf1;border-left:6px solid #27ae60}
+    .contra{background:#fff8e1;border-left:6px solid #f39c12}
+    .tip{background:#eaf4ff;border-left:6px solid #3498db}
+    .box{border-radius:12px;padding:1rem 1.2rem;margin:1rem 0;box-shadow:var(--shadow);border:1px solid var(--border)}
+    .section-title{color:#0d6efd}
+    .muted{color:var(--muted)}
+    .topbtn{position:fixed;right:20px;bottom:24px;display:none}
+  </style>
+
+  <!-- (opțional) badge view-uri: doar markup; contorul real îl legăm noi din GA când vrei -->
+  <script>
+    // lăsăm un hook – dacă adăugăm ulterior contorul via GA4 API, îl scriem aici
+    document.addEventListener('DOMContentLoaded', () => {
+      const el=document.getElementById('viewCount');
+      if(el) el.textContent = '—';
+    });
+  </script>
 </head>
 <body>
 
-<header>
-  <h1>Concursuri și olimpiade școlare la clasele primare: Avantaje și dezavantaje psihologice</h1>
-</header>
+  <!-- NAV existent -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo"><a href="index.html">Educație Reflexivă</a></div>
+      <nav class="nav-links">
+        <a href="index.html">Acasă</a>
+        <a href="studies.html">Studii</a>
+        <a href="despre.html">Despre</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<nav>
-  <ul>
-    <li><a href="#introducere" class="nav-link">Introducere</a></li>
-    <li><a href="#pozitive" class="nav-link">Efecte pozitive</a></li>
-    <li><a href="#negative" class="nav-link">Efecte negative</a></li>
-    <li><a href="#tehnologie" class="nav-link">Impactul tehnologiei</a></li>
-    <li><a href="#recomandari" class="nav-link">Recomandări</a></li>
-    <li><a href="#concluzii" class="nav-link">Concluzii</a></li>
-  </ul>
-</nav>
+  <!-- HERO -->
+  <section class="hero-mini">
+    <div class="container">
+      <h1>Concursuri și olimpiade la clasele primare</h1>
+      <p class="lead">Avantaje, riscuri psihologice, impactul tehnologiei și recomandări pentru o cultură a evaluării sănătoase.</p>
+      <p style="margin-top:10px;text-align:center">
+        <span class="pill-views">
+          <!-- icon ochi -->
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5c4.5 0 8.5 2.6 10 7-1.5 4.4-5.5 7-10 7S3.5 16.4 2 12c1.5-4.4 5.5-7 10-7Zm0 3.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z" stroke="currentColor" stroke-width="1.5"/></svg>
+          <span id="viewCount" class="muted">—</span> vizualizări
+        </span>
+      </p>
+    </div>
+  </section>
 
-<section id="introducere">
-  <h2>Introducere</h2>
-  <p>
-    În contextul modificărilor recente ale curriculumului, Ministerul Educației a propus ca olimpiadele școlare să fie organizate doar pentru clasele gimnaziale și liceale, iar elevii din clasele primare să participe numai la concursuri private:contentReference[oaicite:0]{index=0}. Această decizie a stârnit dezbateri privind impactul psihologic al concursurilor și olimpiadelor timpurii asupra copiilor mici. Experții subliniază că în ciclul primar este esențial să se construiască „elementele de bază ale competențelor-cheie”, dezvoltate în ritmul fiecărui copil:contentReference[oaicite:1]{index=1}. Studiile și opiniile specialistilor atrag atenția că competiția prematură poate afecta procesul de învățare și dezvoltarea personală a elevilor.
-  </p>
-</section>
+  <main class="main">
+    <div class="container">
+      <!-- TOC -->
+      <div class="toc">
+        <h3>Cuprins</h3>
+        <ol>
+          <li><a href="#introducere">Introducere</a></li>
+          <li><a href="#pozitive">Efecte pozitive</a></li>
+          <li><a href="#negative">Efecte negative</a></li>
+          <li><a href="#tehnologie">Impactul tehnologiei</a></li>
+          <li><a href="#recomandari">Recomandări</a></li>
+          <li><a href="#concluzii">Concluzii</a></li>
+        </ol>
+      </div>
 
-<section id="pozitive">
-  <h2>Efecte pozitive</h2>
-  <p>
-    Participarea la concursuri și olimpiade poate aduce beneficii educaționale și psihologice semnificative. Testarea competențelor prin competiție poate crește motivația elevilor și consolidarea încrederii în sine. Elevii care obțin rezultate bune își văd stima de sine întărită, ceea ce acționează ca un motor motivațional pentru eforturi viitoare:contentReference[oaicite:2]{index=2}:contentReference[oaicite:3]{index=3}. Chiar și rezultatele mai puțin bune pot fi lecții valoroase: eșecul îi învață pe copii perseverență și capacitatea de a-și continua obiectivele chiar după un moment dificil:contentReference[oaicite:4]{index=4}.
-  </p>
-  <p>
-    De asemenea, concursurile dezvoltă competențele sociale și colaborarea. Pregătirile comune pentru competiții permit copiilor să își facă prieteni cu interese similare și să lucreze în echipă, chiar dacă premiile sunt acordate individual:contentReference[oaicite:5]{index=5}. În acest fel, copiii deprind să colaboreze și să-și consolideze abilitățile de comunicare în grup.
-  </p>
-  <p>
-    Totodată, competiția poate servi ca tehnică didactică stimulantă. Întrecerea, dacă este dozată echilibrat cu cooperarea, poate activa potențialitățile elevilor și crește interesul pentru învățare:contentReference[oaicite:6]{index=6}. Ea oferă un context de maximă valorificare a predispozițiilor individuale, confirmând elevilor încrederea în aptitudinile proprii. Concursurile devin astfel oportunități de auto-depășire, care ajută la descoperirea pasiunilor și talentele copiilor:contentReference[oaicite:7]{index=7}:contentReference[oaicite:8]{index=8}.
-  </p>
-</section>
+      <section id="introducere">
+        <h2 class="section-title">Introducere</h2>
+        <p>
+          În ultimii ani, discuția despre <em>câtă competiție e sănătoasă în ciclul primar</em> s-a intensificat. În clasele mici, prioritatea ar trebui să rămână
+          formarea bazelor pentru competențele-cheie și dezvoltarea ritmică, în acord cu vârsta. Competiția poate fi utilă – dar doar dacă e bine dozată,
+          explicată și sprijinită emoțional.
+        </p>
+      </section>
 
-<section id="negative">
-  <h2>Efecte negative</h2>
-  <p>
-    Pe de altă parte, există multiple riscuri psihologice asociate concursurilor timpurii cu clasamente publice. Specialiștii avertizează că acestea pot genera anxietate de performanță și stres excesiv. Mulți copii participă la competiții din dorința de a-și face părinții mândri, ceea ce induce temeri profunde de eșec:contentReference[oaicite:9]{index=9}. Frica de a dezamăgi poate genera simptome fizice (greață, amețeli), emoționale (panică) sau cognitive (blocaj mental) înainte de testări:contentReference[oaicite:10]{index=10}. În aceste situații, copiii se pot simți copleșiți și înclinați să evite eforturile viitoare.
-  </p>
-  <p>
-    În plus, competiția duce la compararea copiilor între ei. Clasarea publică sau afișarea notelor, practică întânită în școlile românești, a fost criticată de psihologi. Dacă părinții sau profesorii comentează locurile obținute, copiii pot dezvolta complexe de inferioritate:contentReference[oaicite:11]{index=11}. Compararea constantă împiedică dezvoltarea ritmică a fiecărui copil și poate provoca demotivare: un copil care pierde la un concurs se poate simți etichetat și își poate pierde dorința de a mai învăța:contentReference[oaicite:12]{index=12}.
-  </p>
-  <p>
-    Încărcarea copiilor cu prea multe concursuri și competiții poate duce la „supraîncărcare” și la probleme serioase de sănătate emoțională. Orientarea exagerată spre întreceri poate produce stres cronic, oboseală mentală și regres școlar:contentReference[oaicite:13]{index=13}. Totodată, o focalizare exclusiv pe competiție poate eroda empatia și încrederea în colegi, deoarece accentul se pune pe ierarhizare și auto-performanță, nu pe cooperare și sprijin reciproc:contentReference[oaicite:14]{index=14}.
-  </p>
-</section>
+      <section id="pozitive">
+        <h2 class="section-title">Efecte pozitive</h2>
+        <div class="box pro">
+          <ul>
+            <li><strong>Motivație &amp; auto-încredere:</strong> reușitele pot întări stima de sine și stimulează efortul viitor.</li>
+            <li><strong>Învățare din eșec:</strong> rezultatele mai modeste devin lecții de perseverență și reglare a strategiilor.</li>
+            <li><strong>Socializare &amp; colaborare:</strong> pregătirile în echipă creează legături și abilități de comunicare.</li>
+            <li><strong>Interes sporit pentru conținut:</strong> competiția (echilibrată cu cooperarea) poate crește implicarea cognitivă.</li>
+          </ul>
+        </div>
+      </section>
 
-<section id="tehnologie">
-  <h2>Impactul tehnologiei</h2>
-  <p>
-    În era digitală, tehnologia influențează modul de organizare și desfășurare a competițiilor școlare. Platformele online și resursele digitale oferă acces nelimitat la materiale educaționale interactive. Dispozitivele smart și internetul permit copiilor să învețe într-un mod ușor și distractiv, accesând informații și lecții adaptate intereselor lor:contentReference[oaicite:15]{index=15}:contentReference[oaicite:16]{index=16}. Astfel, copiii pot exersa competențe în diverse domenii prin jocuri și activități online care îmbină învățarea cu distracția.
-  </p>
-  <p>
-    Pe de altă parte, utilizarea tehnologiei presupune și riscuri: copiii pot petrece mult timp în fața ecranelor fără supraveghere adecvată, ceea ce poate conduce la oboseală vizuală și diminuarea interacțiunii sociale. De aceea, implicarea digitală trebuie să fie moderată și supravegheată, asigurându-se că platformele folosite sunt de calitate și relevante pentru vârsta copiilor:contentReference[oaicite:17]{index=17}.
-  </p>
-</section>
+      <section id="negative">
+        <h2 class="section-title">Efecte negative</h2>
+        <div class="box contra">
+          <ul>
+            <li><strong>Anxietate de performanță:</strong> frica de a dezamăgi părinții/profesorii poate genera simptome emoționale și somatice.</li>
+            <li><strong>Comparare și ierarhizare:</strong> afişarea publică a clasamentelor poate induce complexe și demotivare.</li>
+            <li><strong>Supraîncărcare:</strong> prea multe competiții = stres cronic, oboseală și regres al interesului autentic.</li>
+            <li><strong>Eroziunea empatiei:</strong> accent prelung pe “locuri” poate submina spiritul de echipă și încrederea în colegi.</li>
+          </ul>
+        </div>
+      </section>
 
-<section id="recomandari">
-  <h2>Recomandări</h2>
-  <p>
-    Pentru a maximiza beneficiile și a minimiza riscurile, se impun câteva recomandări:
-  </p>
-  <ul>
-    <li>Planificarea concursurilor în funcție de vârsta și dezvoltarea copiilor, astfel încât aceștia să fie pregătiți și motivați pentru provocare:contentReference[oaicite:18]{index=18}:contentReference[oaicite:19]{index=19}.</li>
-    <li>Implicarea voluntară a elevilor: participarea la competiții să fie determinată de interesul copilului, nu de presiunea părinților sau a profesorilor:contentReference[oaicite:20]{index=20}:contentReference[oaicite:21]{index=21}.</li>
-    <li>Orientarea concursurilor spre domenii în care copilul își manifestă pasiune și aptitudini naturale, iar numărul de competiții la care participă să fie echilibrat, pentru a nu îi suprasolicita:contentReference[oaicite:22]{index=22}:contentReference[oaicite:23]{index=23}.</li>
-    <li>Accent pe evaluare formativă și descriptivă: profesorii să nu se concentreze pe locuri și note, ci să evidențieze progresul și punctele forte ale fiecărui elev. Această abordare, utilizată în școlile „Step by Step”, urmărește evoluția individuală fără comparații directe:contentReference[oaicite:24]{index=24}:contentReference[oaicite:25]{index=25}.</li>
-    <li>Asigurarea unui climat de învățare cooperativ: competiția trebuie completată de activități de grup și sprijin emoțional, pentru a cultiva empatia și colaborarea între copii:contentReference[oaicite:26]{index=26}:contentReference[oaicite:27]{index=27}.</li>
-  </ul>
-</section>
+      <section id="tehnologie">
+        <h2 class="section-title">Impactul tehnologiei</h2>
+        <div class="box tip">
+          <p>
+            Platformele online aduc resurse bogate, exersare prin jocuri educaționale și feedback rapid. În același timp, e nevoie de
+            <strong>moderare și calitate</strong>: selecție atentă a resurselor, timp de ecran echilibrat, supraveghere și discuții despre igiena digitală.
+          </p>
+        </div>
+      </section>
 
-<section id="concluzii">
-  <h2>Concluzii</h2>
-  <p>
-    În concluzie, concursurile școlare oferă copiilor din clasele primare oportunități de învățare prin provocări organizate, care pot spori motivația și încrederea în sine atunci când sunt bine dozate:contentReference[oaicite:28]{index=28}:contentReference[oaicite:29]{index=29}. Totuși, beneficiile se obțin doar dacă competițiile sunt adaptate vârstei și ritmului de dezvoltare al copiilor. În caz contrar, presiunea timpurie poate genera anxietate, stres intens și stigmatizarea elevilor mai puțin performanți:contentReference[oaicite:30]{index=30}:contentReference[oaicite:31]{index=31}. Experții recomandă ca orice competiție pentru copiii mici să fie însoțită de măsuri de sprijin emoțional adecvat și evaluare formativă, pentru a preveni efecte negative precum anxietatea severă sau complexe de inferioritate:contentReference[oaicite:32]{index=32}.
-  </p>
-</section>
+      <section id="recomandari">
+        <h2 class="section-title">Recomandări</h2>
+        <div class="box">
+          <ul>
+            <li><strong>Potrivire cu vârsta:</strong> concursuri rare, bine alese, centrate pe interesele și maturitatea copilului.</li>
+            <li><strong>Voluntariat autentic:</strong> participarea se decide cu copilul; evităm presiunea externă.</li>
+            <li><strong>Echilibru:</strong> număr limitat de competiții pe an; alternanță cu proiecte colaborative.</li>
+            <li><strong>Evaluare formativă:</strong> feedback descriptiv + exemple de îmbunătățire, nu doar note/locuri.</li>
+            <li><strong>Climat cooperant:</strong> activități de grup, peer-feedback, reflecții scurte după fiecare experiență.</li>
+          </ul>
+        </div>
+      </section>
 
-<button id="topBtn">Sus</button>
+      <section id="concluzii">
+        <h2 class="section-title">Concluzii</h2>
+        <p>
+          Concursurile pot fi <strong>utile</strong> ca ancore de motivație și ocazii de auto-depășire, dar la vârste mici
+          au sens doar dacă sunt <strong>raroase, explicate și sprijinite emoțional</strong>, cu focus pe progres – nu pe etichete.
+          Când prioritatea rămâne învățarea, competiția devine o unealtă, nu un scop.
+        </p>
+      </section>
 
-<script>
-  // Activează clasa 'active' pe link-ul de meniu curent la scroll
-  const sections = document.querySelectorAll('section');
-  const navLinks = document.querySelectorAll('nav a');
-  window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(sec => {
-      const sectionTop = sec.offsetTop - 100;
-      if (pageYOffset >= sectionTop) {
-        current = sec.getAttribute('id');
-      }
-    });
-    navLinks.forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === '#' + current) {
-        link.classList.add('active');
-      }
-    });
-    // Afișare buton 'Sus'
+      <!-- (opțional) Bibliografie: adaugă sursele tale aici -->
+      <hr />
+      <section>
+        <h2 class="section-title">Bibliografie (de completat)</h2>
+        <ul class="muted">
+          <li>Adaugă aici referințele tale (articole, rapoarte, ghiduri).</li>
+        </ul>
+      </section>
+
+      <a href="#" class="btn topbtn" id="topBtn">Sus ↑</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>&copy; 2025 Andrei Geafer</div>
+      <div class="small">Site static – publicabil pe Netlify</div>
+    </div>
+  </footer>
+
+  <script>
+    // Buton "Sus"
     const topBtn = document.getElementById('topBtn');
-    if (window.scrollY > 300) {
-      topBtn.style.display = 'block';
-    } else {
-      topBtn.style.display = 'none';
-    }
-  });
-  // Scroll la început când se apasă butonul
-  document.getElementById('topBtn').addEventListener('click', () => {
-    window.scrollTo({top: 0, behavior: 'smooth'});
-  });
-</script>
-
+    window.addEventListener('scroll', () => {
+      topBtn.style.display = window.scrollY > 320 ? 'inline-block' : 'none';
+    });
+  </script>
 </body>
 </html>
