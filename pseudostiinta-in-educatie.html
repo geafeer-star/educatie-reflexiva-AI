@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <!-- Google tag (gtag.js) – păstrează același ID ca pe celelalte pagini -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-79WEE68Y98"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-79WEE68Y98');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Riscurile folosirii necritice a AI în educație" />
+<meta property="og:title" content="Concursuri și olimpiade la clasele primare – avantaje & riscuri" />
+<meta property="og:description" content="Profesori și diseminarea neintenționată a conținutului fals" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://geafeer-star.github.io/educatie-reflexiva-AI/pseudostiinta-in-educatie.html" />
+
+  <title>Inteligența Artificială și Dezinformarea în Educație</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* mici ajustări doar pentru această pagină */
+    .hero-note{margin-top:8px;opacity:.9}
+    .toc-wrap{position:sticky;top:88px;background:#f8fafc;border:1px solid var(--border);
+      border-radius:12px;padding:14px;box-shadow:var(--shadow)}
+    .toc-wrap h4{margin:.2em 0 .4em;font-size:1rem}
+    .toc-wrap ul{margin:.4em 0 0;padding-left:18px}
+    .toc-wrap a{text-decoration:none}
+    .section{scroll-margin-top:100px} /* ca să nu intre sub navbar la ancore */
+    .key-list li{margin:.35em 0}
+    .muted{color:var(--muted)}
+    #topBtn{
+      position:fixed;right:18px;bottom:18px;z-index:20;
+      display:none;padding:.55rem .8rem;border-radius:10px;border:1px solid var(--border);
+      background:var(--brand);color:#fff;text-decoration:none;box-shadow:var(--shadow)
+    }
+    #topBtn:hover{filter:brightness(.95)}
+    @media (max-width: 900px){
+      .layout{display:block}
+      .toc-col{margin-bottom:16px}
+    }
+    @media (min-width: 901px){
+      .layout{display:grid;grid-template-columns:260px 1fr;gap:24px}
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR comun -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo"><a href="index.html">Educație Reflexivă</a></div>
+      <nav class="nav-links">
+        <a href="index.html">Acasă</a>
+        <a href="studies.html" class="active">Studii</a>
+        <a href="despre.html">Despre</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <header class="header-hero">
+    <div class="container">
+      <p class="muted" style="letter-spacing:.12em;text-transform:uppercase;margin:0 0 6px">Raport</p>
+      <h1 style="margin:0 0 6px">Inteligența Artificială și Dezinformarea în Educație</h1>
+      <p class="hero-note">Avantaje educaționale & posibile riscuri psihologice + recomandări pentru un echilibru sănătos.</p>
+    </div>
+  </header>
+
+  <!-- CONȚINUT -->
+      <!-- TOC -->
+         <section id="sect1">
+      <h2>1. Conținutul pseudoștiințific și conspiraționist generat de AI</h2>
+
+      <p>Studii recente arată că modelele generative de limbaj (de ex. ChatGPT/GPT-4) pot inventa informații pseudo-științifice sau conspiraționiste foarte plauzibile. De pildă, <em>Harvard Misinformation Review</em> a documentat apariția unor „lucrări științifice” fabricate de AI pe teme controversate (medicină, mediu), cu citări și date inventate, dar imitate din stilul academic veritabil, amenințând integritatea evidenței științifice <a href="#r-hmr" title="Harvard Kennedy School Misinformation Review">[HMR]</a> și <a href="#r-bi" title="Business Insider">[BI]</a>.</p>
+
+      <p>În experimente controlate, cercetători au cerut GPT-4 să genereze titluri de știri false conspiraționiste (ex.: „vaccinuri ineficiente”, „Pământ plat”), iar participanții umani au avut dificultăți în a le detecta ca false <a href="#r-springer" title="SpringerLink">[Springer]</a>.</p>
+
+      <div class="callout ex">
+        <strong>Exemplu jurnalistic:</strong> un utilizator a cerut un eseu „în stil dezinformator despre vaccinuri”; sistemul a inventat un studiu imaginar în <em>JAMA</em>, susținând fals că eficacitatea vaccinului COVID-19 ar fi ~2% <a href="#r-atpe" title="Association of Texas Professional Educators">[ATPE]</a>.
+      </div>
+
+      <p>De asemenea, rapoarte de monitorizare media indică faptul că sisteme conversaționale pot produce știri false în procente ridicate când sunt stimulate cu subiecte sensibile (COVID, atacuri armate, război) <a href="#r-atpe">[ATPE]</a>. Un caz citat: un răspuns eronat cu tentă conspiraționistă despre masacrul de la Parkland <a href="#r-atpe">[ATPE]</a>.</p>
+
+      <h3>Exemple ilustrative</h3>
+      <ul>
+        <li>Articole „științifice” false pe subiecte de actualitate, cu referințe inventate <a href="#r-hmr">[HMR]</a>, <a href="#r-bi">[BI]</a>.</li>
+        <li>Titluri conspirative personalizate (ex.: „Vaccinurile conțin microcipuri”) optimizate pentru un public-țintă <a href="#r-springer">[Springer]</a>.</li>
+        <li>„Date” alarmiste fabricate (ex.: „studiu fake în JAMA”), care arată cât de ușor se poate produce pseudo-știință convingătoare <a href="#r-atpe">[ATPE]</a>.</li>
+      </ul>
+
+      <div class="callout risk">
+        <strong>De ce se întâmplă?</strong> Modelele generative sunt <em>predictiv-statistice</em>: pot combina și extrapola tipare lingvistice, dar nu „cunosc” adevărul. De aceea pot mima perfect forma științei, fără garanția conținutului.
+      </div>
+    </section>
+
+    <section id="sect2">
+      <h2>2. Profesori și diseminarea neintenționată a conținutului fals din AI</h2>
+
+      <p>Deși literatura strict despre cazuri concrete cu profesori este încă limitată, specialiștii avertizează asupra riscului ca asistentele AI didactice să devină „influențatori invizibili” care introduc bias sau erori <a href="#r-govtech" title="GovTech / Common Sense">[GovTech]</a>. Cadrele didactice novice, mai ales fără formare în tehnologie educațională, pot prelua necritic explicații generate de AI și le pot prezenta ca fapt <a href="#r-govtech">[GovTech]</a>.</p>
+
+      <div class="callout">
+        <strong>Poziția sindicatelor educaționale:</strong> „ChatGPT generează din când în când dezinformare” – nu este o sursă academică de încredere fără verificări riguroase <a href="#r-nea" title="National Education Association">[NEA]</a>.
+      </div>
+
+      <p>Concluzie: e nevoie de ghidare și formare pentru ca profesorii să poată evalua critic rezultatele AI și să evite propagarea involuntară a falsurilor <a href="#r-govtech">[GovTech]</a>, <a href="#r-nea">[NEA]</a>.</p>
+    </section>
+
+    <section id="sect3">
+      <h2>3. Riscurile folosirii necritice a AI în educație</h2>
+
+      <p>Folosirea nefiltrată poate amplifica dezinformarea și submina gândirea critică. Analize educaționale recente notează că AI poate contribui la campanii de dezinformare la scară, generând rapid narațiuni false <a href="#r-da1" title="District Administration (1)">[DA-1]</a>, <a href="#r-da2" title="District Administration (2)">[DA-2]</a>. Unele evaluări arată că GPT-4 poate produce „povești false persuasive” imitând tonul unor media de stat sau conținut conspiraționist – chiar mai convingător decât versiuni anterioare <a href="#r-da2">[DA-2]</a>.</p>
+
+      <div class="callout ex">
+        <strong>Exemplu didactic:</strong> GPT-4 a putut scrie un articol conspiraționist despre masacrul de la Sandy Hook ca „operațiune mascată”, în timp ce GPT-3.5 îl demonta corect ca fals <a href="#r-da2">[DA-2]</a>.
+      </div>
+
+      <p>În plus, „halucinațiile” (erori factuale prezentate cu încredere) rămân un risc tehnic ridicat, mai ales când sistemul inventează citări sau date <a href="#r-hmr">[HMR]</a>. În educație, asta se traduce prin teme/eseuri „savant” dar cu concepte istorice sau științifice inventate.</p>
+
+      <div class="grid">
+        <div class="ref-card">
+          <h3 class="small">Riscuri principale</h3>
+          <ul>
+            <li>Inundarea conținutului educațional cu informații neverificate.</li>
+            <li>Slăbirea abilității elevilor de a distinge adevărul de ficțiune.</li>
+            <li>Erodarea încrederii în resursele educaționale.</li>
+          </ul>
+        </div>
+        <div class="ref-card">
+          <h3 class="small">Constatări din sinteze</h3>
+          <p class="small">O revizuire de tip scoping sugerează o „contradicție fundamentală”: AI poate produce propagandă persuasivă și dezinformare realistă la scară <a href="#r-springer">[Springer]</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sect4">
+      <h2>4. Recomandări pentru prevenirea fenomenelor</h2>
+
+      <div class="callout tip">
+        <strong>Principiu cheie:</strong> AI este un <em>instrument</em>, nu o <em>autoritate</em>. Se folosește critic, se verifică extern și se contextualizează pedagogic.
+      </div>
+
+      <h3>4.1 Educație digitală &amp; media literacy</h3>
+      <p>Predarea gândirii critice și a verificării surselor este fundamentală. Abordarea <em>lateral reading</em> (părăsești rapid pagina sursă pentru a căuta confirmări din alte surse credibile) trebuie modelată de profesor și exersată de elevi <a href="#r-stanford" title="Stanford University News">[Stanford]</a>.</p>
+
+      <h3>4.2 Formarea profesorilor</h3>
+      <p>Ghiduri recente recomandă „alfabetizarea în AI” pentru profesori și elevi, inclusiv înțelegerea bias-urilor modelelor, a halucinațiilor și a limitărilor <a href="#r-teachai1" title="TeachAI (Policy/Guidance)">[TeachAI-1]</a>, <a href="#r-teachai2" title="TeachAI (Toolkit)">[TeachAI-2]</a>.</p>
+
+      <h3>4.3 Fact-checking procedural</h3>
+      <p>Nu se utilizează output-uri AI în lecții fără verificare factuală. Se recomandă includerea exercițiilor de fact-checking și <em>prebunking</em> (anticiparea și demontarea miturilor) <a href="#r-da1">[DA-1]</a>.</p>
+
+      <h3>4.4 Politici școlare clare</h3>
+      <p>Interdicțiile generale sunt ineficiente; e preferabil un set de reguli explicite pentru folosirea responsabilă a AI, integrat în curriculum și în politicile de confidențialitate/tehnologie <a href="#r-teachai1">[TeachAI-1]</a>, <a href="#r-teachai2">[TeachAI-2]</a>.</p>
+
+      <div class="hr"></div>
+
+      <h3>Sumar recomandări (checklist pentru școli)</h3>
+      <ul>
+        <li><strong>Formare continuă a profesorilor</strong> în AI &amp; media literacy (erori, halucinații, bias) <a href="#r-teachai1">[TeachAI-1]</a>, <a href="#r-teachai2">[TeachAI-2]</a>.</li>
+        <li><strong>Verificarea surselor</strong>: <em>lateral reading</em> + fact-checking sistematic în clasă <a href="#r-stanford">[Stanford]</a>, <a href="#r-da1">[DA-1]</a>.</li>
+        <li><strong>Cursuri explicite pentru elevi</strong> despre dezinformare, inclusiv cum AI poate genera știri false &amp; exerciții de demontare.</li>
+        <li><strong>Politici școlare &amp; suport administrativ</strong> pentru o utilizare responsabilă (detectoare, biblioteci cu conținut verificat).</li>
+        <li><strong>Promovarea gândirii critice</strong> în toate disciplinele; profesorul modelează scepticismul sănătos față de afirmații neconfirmate <a href="#r-stanford">[Stanford]</a>, <a href="#r-panorama" title="Panorama Education">[Panorama]</a>.</li>
+      </ul>
+
+      <div class="kt">
+        <span class="pill">#MediaLiteracy</span>
+        <span class="pill">#AIinEdu</span>
+        <span class="pill">#FactChecking</span>
+        <span class="pill">#Prebunking</span>
+        <span class="pill">#CriticalThinking</span>
+      </div>
+    </section>
+
+    <section id="surse">
+      <h2>Surse &amp; resurse (2023–2025)</h2>
+      <p class="footnote">Nota: linkurile de mai jos corespund domeniilor citate în textul studiului original.</p>
+
+      <div class="refs">
+        <ul>
+          <li id="r-hmr"><strong>[HMR]</strong> Harvard Kennedy School – Misinformation Review: <a href="https://misinforeview.hks.harvard.edu" target="_blank" rel="noopener">https://misinforeview.hks.harvard.edu</a></li>
+          <li id="r-bi"><strong>[BI]</strong> Business Insider (analize despre AI &amp; știință): <a href="https://www.businessinsider.com" target="_blank" rel="noopener">https://www.businessinsider.com</a></li>
+          <li id="r-springer"><strong>[Springer]</strong> SpringerLink (studii despre generative AI &amp; mis/disinformation): <a href="https://link.springer.com" target="_blank" rel="noopener">https://link.springer.com</a></li>
+          <li id="r-atpe"><strong>[ATPE]</strong> Association of Texas Professional Educators (exemple raportate despre conținut inventat): <a href="https://www.atpe.org" target="_blank" rel="noopener">https://www.atpe.org</a></li>
+          <li id="r-govtech"><strong>[GovTech]</strong> GovTech / Common Sense – riscuri și ghidare pentru educație: <a href="https://www.govtech.com" target="_blank" rel="noopener">https://www.govtech.com</a></li>
+          <li id="r-nea"><strong>[NEA]</strong> National Education Association – atenționări privind utilizarea AI: <a href="https://www.nea.org" target="_blank" rel="noopener">https://www.nea.org</a></li>
+          <li id="r-da1"><strong>[DA-1]</strong> District Administration (articole despre AI &amp; false narratives): <a href="https://www.districtadministration.com" target="_blank" rel="noopener">https://www.districtadministration.com</a></li>
+          <li id="r-da2"><strong>[DA-2]</strong> District Administration – rapoarte NewsGuard / GPT-4: <a href="https://www.districtadministration.com" target="_blank" rel="noopener">https://www.districtadministration.com</a></li>
+          <li id="r-stanford"><strong>[Stanford]</strong> Stanford News – gândire critică &amp; lateral reading: <a href="https://news.stanford.edu" target="_blank" rel="noopener">https://news.stanford.edu</a></li>
+          <li id="r-teachai1"><strong>[TeachAI-1]</strong> TeachAI – politici &amp; ghiduri pentru școli: <a href="https://teachai.org" target="_blank" rel="noopener">https://teachai.org</a></li>
+          <li id="r-teachai2"><strong>[TeachAI-2]</strong> TeachAI – toolkit curricular: <a href="https://teachai.org" target="_blank" rel="noopener">https://teachai.org</a></li>
+          <li id="r-panorama"><strong>[Panorama]</strong> Panorama Education – resurse de gândire critică: <a href="https://www.panoramaed.com" target="_blank" rel="noopener">https://www.panoramaed.com</a></li>
+        </ul>
+      </div>
+
+      <div class="hr"></div>
+      <p class="small">Acest document sintetizează constatări din analize și rapoarte 2023–2025 privind relația dintre modele generative și dezinformare în contexte educaționale. Se recomandă validarea locală a referințelor și actualizarea periodică a linkurilor.</p>
+    </section>
+
+    <footer>
+      <div>&copy; 2025. Publicare: 28 octombrie 2025. Poți reutiliza materialul în scop educațional cu indicarea sursei.</div>
+    </footer>
+  </div>
+</body>
+</html>
