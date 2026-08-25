@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-79WEE68Y98"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-79WEE68Y98');</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>De la chatbot la agent: când AI-ul începe să lucreze cu calculatorul nostru</title>
+  <meta name="description" content="Ce se schimbă atunci când un AI poate folosi fișiere, browserul și aplicațiile de pe calculator, ce rămâne în cloud și cum ar putea arăta viitorul apropiat, îndepărtat și foarte îndepărtat.">
+  <meta name="author" content="Andrei Geafer">
+  <link rel="canonical" href="https://geafeer-star.github.io/educatie-reflexiva-AI/de-la-chatbot-la-agent.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="De la chatbot la agent: când AI-ul începe să lucreze cu calculatorul nostru">
+  <meta property="og:description" content="Chatbotul ne spunea ce să facem. Agentul începe să poată face pașii împreună cu noi. Ce câștigăm, ce riscăm și ce urmează?">
+  <meta property="og:url" content="https://geafeer-star.github.io/educatie-reflexiva-AI/de-la-chatbot-la-agent.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&h=630&q=85">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ro_RO">
+  <meta property="article:published_time" content="2026-08-25">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="De la chatbot la agent: când AI-ul începe să lucreze cu calculatorul nostru">
+  <meta name="twitter:description" content="Ce se schimbă când AI-ul primește nu doar o voce, ci și mâini digitale.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&h=630&q=85">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="linkify.js" defer></script>
+  <style>
+    .study-wrap{max-width:920px;margin:0 auto;padding:34px 20px 72px;line-height:1.75}
+    .study-wrap h1{font-size:clamp(2rem,5vw,3.25rem);line-height:1.08;margin:0 0 16px}
+    .study-wrap h2{font-size:1.67rem;margin-top:46px;line-height:1.25}
+    .study-wrap h3{font-size:1.18rem;margin-top:28px}
+    .study-wrap p{margin:15px 0}
+    .lead{font-size:1.2rem;color:#3f4854;max-width:820px}
+    .meta{font-size:.94rem;color:#68717d;margin:14px 0 26px}
+    .hero{width:100%;aspect-ratio:16/8.5;object-fit:cover;border-radius:18px;display:block;box-shadow:0 12px 34px rgba(0,0,0,.12)}
+    .caption{font-size:.82rem;color:#747d88;margin-top:8px;text-align:right}
+    .tag{display:inline-block;background:#eaf6f3;color:#176c5b;padding:5px 9px;border-radius:999px;font-size:.8rem;font-weight:700;margin-right:6px;margin-bottom:8px}
+    .question{margin:34px 0;padding:28px;border-radius:18px;background:#102b32;color:#fff;font-size:clamp(1.24rem,3vw,1.62rem);line-height:1.45;font-weight:650}
+    .callout{margin:29px 0;padding:22px 24px;border-left:5px solid #1f8a70;background:#f3faf8;border-radius:0 12px 12px 0;font-size:1.07rem}
+    .warning{margin:29px 0;padding:22px 24px;border-left:5px solid #b97a1f;background:#fff9ef;border-radius:0 12px 12px 0;font-size:1.04rem}
+    .flow{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 30px;align-items:center}
+    .flow span{background:#f0f3f6;border-radius:999px;padding:8px 12px;font-weight:650;font-size:.92rem}
+    .flow b{color:#7d8792}
+    .compare{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:25px 0}
+    .compare-card{padding:20px;border-radius:15px;border:1px solid #e1e7e9;background:#fff}
+    .compare-card strong{display:block;font-size:1.07rem;margin-bottom:7px}
+    .mini-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:24px 0}
+    .mini-card{padding:18px;border:1px solid #e5e9ed;border-radius:14px;background:#fff}
+    .mini-card strong{display:block;margin-bottom:5px}
+    .timeline{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:26px 0}
+    .time-card{padding:20px;border-radius:16px;background:#f7f9fa;border:1px solid #e3e7ea}
+    .time-card .years{font-weight:800;color:#176c5b;font-size:.88rem;text-transform:uppercase;letter-spacing:.03em}
+    .time-card h3{margin:8px 0 10px;font-size:1.18rem}
+    .badge{display:inline-block;margin-top:8px;padding:4px 8px;border-radius:999px;background:#e8edf0;color:#4c5962;font-size:.78rem;font-weight:700}
+    .quote{font-size:1.18rem;font-weight:650;line-height:1.55;margin:30px 0;padding:20px 0;border-top:1px solid #dfe5e9;border-bottom:1px solid #dfe5e9}
+    .sources{font-size:.91rem;color:#59636f}
+    .sources li{margin-bottom:10px}
+    .sources a{word-break:break-word}
+    .note{font-size:.9rem;color:#68717d}
+    @media(max-width:760px){.timeline{grid-template-columns:1fr}.compare,.mini-grid{grid-template-columns:1fr}.study-wrap{padding-top:22px}.study-wrap h2{margin-top:37px}.question{padding:22px}}
+  </style>
+</head>
+<body>
+<header class="navbar">
+  <div class="container">
+    <div class="logo"><a href="index.html">Educație Reflexivă</a></div>
+    <nav class="nav-links">
+      <a href="index.html">Acasă</a>
+      <a href="studies.html" class="active">Studii</a>
+      <a href="despre.html">Despre</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="study-wrap">
+  <div>
+    <span class="tag">Inteligență artificială</span>
+    <span class="tag">Agenți AI</span>
+    <span class="tag">Viitor digital</span>
+  </div>
+
+  <h1>De la chatbot la agent: când AI-ul începe să lucreze cu calculatorul nostru</h1>
+  <p class="lead">Până de curând, inteligența artificială semăna mai ales cu un interlocutor foarte informat: îi puneai o întrebare, primeai un răspuns, apoi tu deschideai documentul, site-ul sau aplicația și făceai restul. În 2026, această graniță începe să se subțieze. AI-ul nu mai primește doar o „voce”. Primește, treptat, și mâini digitale.</p>
+  <div class="meta">Studiu de sinteză · Andrei Geafer, cu sprijinul GPT · 25 august 2026</div>
+
+  <img class="hero" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=85" alt="Laptop și spațiu de lucru digital">
+  <div class="caption">Imagine: Unsplash</div>
+
+  <h2>O schimbare mai mare decât pare</h2>
+  <p>Un chatbot clasic funcționa, în esență, astfel: îi spuneai ce vrei, el îți oferea un răspuns, iar apoi tu transformai răspunsul în acțiune. Copiai textul în Word, căutai fișierul, deschideai pagina, completai formularul și apăsai butonul potrivit.</p>
+
+  <p>Noile sisteme de tip <strong>agent</strong> încearcă să unească aceste două lumi. ChatGPT Work, de exemplu, este descris de OpenAI ca un agent pentru sarcini în mai mulți pași, capabil să lucreze, cu permisiune, cu fișiere și aplicații locale pe desktop. Aplicația desktop are și un browser integrat în care utilizatorul și ChatGPT pot vedea aceeași pagină și pot lucra asupra ei.</p>
+
+  <div class="question">Chatbotul ne spunea ce să facem. Agentul începe să poată face pașii împreună cu noi.</div>
+
+  <div class="compare">
+    <div class="compare-card"><strong>Înainte: „Spune-mi cum”</strong>Întrebai AI-ul cum se completează un formular. Primeai explicația, apoi schimbai fereastra și executai singur fiecare pas.</div>
+    <div class="compare-card"><strong>Acum: „Pregătește împreună cu mine”</strong>Poți deschide formularul într-un browser compatibil și îi poți cere agentului să îl citească, să pregătească anumite câmpuri și să se oprească înainte de trimitere.</div>
+  </div>
+
+  <h2>Dar înseamnă că „AI-ul rulează pe calculatorul meu”?</h2>
+  <p><strong>Nu, cel puțin nu în sensul simplu pe care îl sugerează propoziția.</strong> Este important să separăm trei lucruri: modelul AI, agentul și mediul în care agentul lucrează.</p>
+
+  <div class="mini-grid">
+    <div class="mini-card"><strong>Modelul</strong>Este „creierul” care interpretează cererea și decide ce răspuns sau ce pas ar trebui urmat.</div>
+    <div class="mini-card"><strong>Agentul</strong>Este mecanismul care transformă acea decizie într-o succesiune de acțiuni: deschide, citește, compară, scrie, navighează.</div>
+    <div class="mini-card"><strong>Mediul local</strong>Înseamnă fișierele, aplicațiile și resursele de pe calculator la care utilizatorul îi permite accesul.</div>
+    <div class="mini-card"><strong>Cloud-ul</strong>Este infrastructura de servere unde se poate desfășura în continuare inferența modelului și o parte din procesare.</div>
+  </div>
+
+  <p>Documentația OpenAI distinge explicit între <strong>Work local</strong> și <strong>Work în cloud</strong>. În modul local, anumite sarcini sunt executate prin aplicația desktop și pot folosi resursele locale autorizate. În același timp, documentația tehnică pentru produse înrudite arată că informația necesară inferenței poate fi trimisă către serverele OpenAI. Așadar, descrierea cea mai corectă este <strong>arhitectură hibridă</strong>.</p>
+
+  <div class="flow">
+    <span>Tu</span><b>→</b><span>aplicația desktop</span><b>↔</b><span>fișiere / browser / aplicații</span><b>↔</b><span>model AI în cloud</span>
+  </div>
+
+  <div class="callout"><strong>Pe scurt:</strong> o parte mai mare din mediul de lucru și din execuția acțiunilor se mută aproape de tine, pe calculator. Asta nu înseamnă automat că modelul AI de frontieră este instalat pe PC și funcționează complet offline.</div>
+
+  <h2>De ce aplicația desktop poate fi atât de mare?</h2>
+  <p>Când vedem o aplicație ChatGPT de sute de megabytes, tentația este să spunem: „gata, au pus AI-ul în calculator”. Dimensiunea singură nu dovedește acest lucru.</p>
+
+  <p>O aplicație desktop modernă poate include componente pentru browser integrat, autentificare, descărcări, acces controlat la fișiere, integrare cu aplicațiile sistemului, sandbox-uri și alte mecanisme locale. Cu alte cuvinte, ceea ce se instalează nu este neapărat „creierul întreg”, ci mai degrabă <strong>atelierul în care acel creier poate lucra</strong>.</p>
+
+  <div class="quote">Imaginează-ți un expert aflat la distanță. Înainte îi telefonai și îți dicta instrucțiunile. Acum, cu permisiunea ta, poate folosi și masa ta de lucru. Expertul poate fi tot la distanță, dar mâinile lui sunt mult mai aproape de problema ta.</div>
+
+  <h2>Ce poate însemna asta pentru oameni obișnuiți?</h2>
+  <p>Cuvântul „agent” sună tehnic, dar efectele lui pot fi foarte domestice.</p>
+
+  <div class="mini-grid">
+    <div class="mini-card"><strong>Pentru un părinte</strong>AI-ul poate compara informații din mai multe pagini și poate pregăti un formular sau un mesaj, fără ca părintele să mute manual fiecare informație dintr-o fereastră în alta.</div>
+    <div class="mini-card"><strong>Pentru un elev</strong>Poate organiza materialele dintr-un folder de învățare, poate crea întrebări de recapitulare și poate explica ce lipsește, fără să preia însă gândirea pe care elevul trebuie să o exerseze.</div>
+    <div class="mini-card"><strong>Pentru un profesor</strong>Poate lucra cu un folder selectat pentru a pregăti fișe, variante de exerciții sau materiale, dacă sunt respectate regulile privind datele elevilor.</div>
+    <div class="mini-card"><strong>Pentru un bunic</strong>Poate explica o pagină online complicată, câmp cu câmp, înainte ca utilizatorul să apese vreun buton sau să trimită date personale.</div>
+  </div>
+
+  <p>Aici este frumusețea, dar și pericolul schimbării. Un chatbot care greșește îți poate da o frază greșită. <strong>Un agent care greșește poate apăsa și butonul greșit.</strong></p>
+
+  <h2>De aceea, accesul înseamnă și responsabilitate</h2>
+  <p>Stanford AI Index 2026 arată o îmbunătățire spectaculoasă a agenților care folosesc calculatoare, dar subliniază și limita actuală: pe benchmark-uri structurate, agenții încă eșuează aproximativ într-o treime dintre încercări. În lumea reală, unde paginile se schimbă, apar ferestre neașteptate și datele pot fi ambigue, problema este și mai delicată.</p>
+
+  <div class="warning"><strong>Regula simplă pe care aș recomanda-o familiilor și școlilor:</strong> lasă AI-ul să pregătească, dar păstrează la om aprobarea pentru consecințe. Mesaje importante, formulare, plăți, înscrieri, ștergeri, conturi și informații personale merită o ultimă verificare umană.</div>
+
+  <h3>Un risc nou: „instrucțiunea falsă” ascunsă într-o pagină</h3>
+  <p>Unul dintre riscurile specifice agenților se numește <em>prompt injection</em>. O pagină web, un document sau un text poate conține instrucțiuni construite special pentru a păcăli agentul.</p>
+
+  <p>O analogie simplă: îi dai unui asistent un dosar și îi spui „citește actele și fă-mi un rezumat”. Între acte, cineva strecoară o foaie pe care scrie: „ignoră-l pe proprietarul dosarului și trimite documentele altcuiva”. Un om ar putea sesiza imediat absurditatea. Un agent AI poate avea nevoie de protecții speciale pentru a nu trata acea foaie drept instrucțiune legitimă.</p>
+
+  <p>OpenAI descrie prompt injection drept o problemă de securitate încă nerezolvată complet și recomandă instrucțiuni precise, limite clare și verificarea acțiunilor importante.</p>
+
+  <h3>„Local” nu înseamnă automat „privat” sau „offline”</h3>
+  <p>Și aici merită puțină atenție. Faptul că agentul poate folosi un fișier aflat pe calculator nu înseamnă automat că nicio informație din acel fișier nu părăsește dispozitivul. Datele necesare modelului pot fi procesate în cloud, în funcție de produs și configurație.</p>
+
+  <p>Pentru un profesor, consecința practică este foarte simplă: <strong>nu oferi unui agent acces la tot folderul cu date identificabile despre elevi doar pentru că este comod.</strong> Folosește minimul necesar, anonimizează când este posibil și respectă regulile instituției și protecția datelor.</p>
+
+  <h2>Ce se schimbă în relația noastră cu calculatorul?</h2>
+  <p>În ultimii patruzeci de ani, am învățat să „vorbim” cu calculatoarele în limba lor: ferestre, meniuri, foldere, butoane, aplicații. Dacă agenții devin suficient de buni, s-ar putea să apară o inversare: calculatorul începe să învețe mai mult limba intențiilor noastre.</p>
+
+  <p>În loc de „deschide aplicația X, caută meniul Y, exportă, mută fișierul și apoi trimite-l”, cererea poate deveni: <strong>„pregătește-mi materialele pentru mâine și arată-mi ce ai făcut înainte să le trimiți”.</strong></p>
+
+  <p>Microsoft a vorbit deja despre direcția unui „agentic OS”, adică un sistem de operare în care agenții pot lucra cu fișiere și aplicații și pot executa sarcini în fundal. Este o direcție comercială, nu o profeție neutră, dar arată că această idee nu aparține unei singure companii.</p>
+
+  <h2>Viitorul: trei orizonturi</h2>
+  <p>Predicțiile despre inteligența artificială trebuie tratate cu modestie. OECD a publicat în 2026 scenarii pentru evoluția AI până în 2030 care merg de la progres încetinit până la accelerare rapidă. Cu alte cuvinte, chiar și instituțiile serioase lucrează cu <strong>scenarii</strong>, nu cu certitudini.</p>
+
+  <div class="timeline">
+    <div class="time-card">
+      <div class="years">1–3 ani</div>
+      <h3>Agentul devine o funcție obișnuită</h3>
+      <p>Probabil vom vedea tot mai multe aplicații în care AI-ul poate naviga, compara, completa și organiza. Abilitatea importantă nu va mai fi doar „să scrii prompturi”, ci să știi ce permisiuni dai și unde îl oprești.</p>
+      <span class="badge">relativ probabil</span>
+    </div>
+    <div class="time-card">
+      <div class="years">3–10 ani</div>
+      <h3>De la operare la supraveghere</h3>
+      <p>În multe activități de birou, omul ar putea ajunge să definească obiectivul, să verifice planul și să aprobe rezultatul, în loc să execute fiecare click. Granițele dintre aplicații pot deveni mai puțin vizibile.</p>
+      <span class="badge">plauzibil, dar incert</span>
+    </div>
+    <div class="time-card">
+      <div class="years">10+ ani</div>
+      <h3>Calculatorul orientat spre intenții</h3>
+      <p>Este posibil ca aplicațiile să rămână „în culise”, iar utilizatorul să lucreze mai ales printr-un agent personal care coordonează dispozitive, servicii și date. Aici intrăm însă într-o zonă mult mai speculativă.</p>
+      <span class="badge">ipoteză</span>
+    </div>
+  </div>
+
+  <h3>Viitorul apropiat: 1–3 ani</h3>
+  <p><strong>Ce putem anticipa rezonabil:</strong> agenții vor apărea în tot mai multe produse de masă, iar modelul hibrid local–cloud va deveni mai obișnuit. Browserul, fișierele și aplicațiile vor putea fi folosite de AI cu permisiuni mai granulare.</p>
+
+  <p><strong>Ce spun sursele:</strong> OpenAI prezintă deja Work ca pe un sistem capabil să urmărească proiecte în mai mulți pași. Stanford arată o creștere rapidă a performanței agenților pe sarcini de operare a calculatorului. OECD avertizează însă că securitatea, confidențialitatea și acuratețea nu au ajuns la același nivel de maturitate ca entuziasmul pentru agenți.</p>
+
+  <p><strong>Predicția mea:</strong> cea mai importantă alfabetizare digitală nouă nu va fi „cum vorbesc cu AI-ul?”, ci <strong>„câtă autoritate îi dau?”</strong>. Vom învăța să setăm limite pentru agenți în același fel în care astăzi învățăm să gestionăm parole, permisiuni și plăți online.</p>
+
+  <h3>Viitorul mai îndepărtat: 3–10 ani</h3>
+  <p>Cercetătorii de la METR măsoară cât de lungă este o sarcină pe care un agent o poate duce la capăt cu o anumită rată de succes. Extrapolarea lor, foarte atent calificată de autori, plasa un orizont de aproximativ o lună pentru anumite sarcini software în jurul anului 2029. Este esențial să nu traducem asta prin „AI-ul va putea face orice muncă de o lună în 2029”. Măsurătoarea privește în special sarcini software și de cercetare bine definite.</p>
+
+  <p>International AI Safety Report 2026 oferă o formulare mai prudentă: dacă tendințele recente continuă, agenții software ar putea trece de la proiecte de câteva ore în 2027–2028 la proiecte de câteva zile spre finalul deceniului. Raportul subliniază însă că o rată de succes insuficientă poate face autonomia completă nepotrivită pentru multe activități profesionale.</p>
+
+  <p><strong>Predicția mea:</strong> până la începutul anilor 2030, pentru o parte din munca intelectuală, interfața principală va deveni <strong>supravegherea</strong>. Nu neapărat „AI-ul înlocuiește omul”, ci omul trece de la executantul tuturor pașilor la arhitectul obiectivului, evaluatorul rezultatului și responsabilul deciziei finale.</p>
+
+  <h3>Viitorul foarte îndepărtat: 10+ ani</h3>
+  <p>Aici orice afirmație trebuie tratată ca ipoteză. Zece ani în tehnologie pot schimba inclusiv paradigma de bază.</p>
+
+  <p><strong>Ipoteza mea:</strong> în anii 2030 și dincolo de ei, este posibil ca pentru mulți oameni să devină mai puțin important să știe „în ce aplicație se face lucrul acesta”. Un agent personal ar putea coordona mai multe aplicații, conturi și dispozitive în fundal. Interfața calculatorului s-ar muta treptat de la <em>aplicații</em> la <em>intenții</em>.</p>
+
+  <p>Nu cred însă că „totul se va muta în cloud” sau, dimpotrivă, „totul va deveni local”. Mai probabil este o combinație: lucrurile sensibile, rapide și personale vor fi procesate tot mai mult pe dispozitiv, iar modelele foarte puternice vor folosi în continuare infrastructură de cloud atunci când este nevoie.</p>
+
+  <p>Și cred că întrebarea fundamentală nu va fi doar „cât de inteligent este agentul?”, ci <strong>„cine are autoritatea și cine răspunde pentru ce a făcut?”</strong>. Identitatea agentului, jurnalul acțiunilor, permisiunile, posibilitatea de a revoca accesul și răspunderea umană ar putea deveni la fel de importante ca inteligența modelului.</p>
+
+  <h2>O concluzie pentru părinți, copii, profesori și bunici</h2>
+  <p>Nu este nevoie să devenim specialiști IT pentru a înțelege schimbarea. Putem ține minte patru idei:</p>
+
+  <div class="mini-grid">
+    <div class="mini-card"><strong>1. AI-ul nu mai este doar conversație.</strong>Începe să poată acționa în mediul digital, dacă îi oferim acces.</div>
+    <div class="mini-card"><strong>2. „Local” nu înseamnă automat „offline”.</strong>Calculatorul poate găzdui mediul de lucru, în timp ce modelul rămâne în cloud.</div>
+    <div class="mini-card"><strong>3. Puterea aduce riscuri noi.</strong>Un răspuns greșit poate deveni o acțiune greșită, de aceea limitele și verificarea contează.</div>
+    <div class="mini-card"><strong>4. Viitorul nu este decis.</strong>Tendința este clară, dar viteza, regulile și efectele sociale rămân deschise.</div>
+  </div>
+
+  <div class="question">Poate că întrebarea epocii chatbotului a fost „Ce poate să-mi răspundă AI-ul?”. Întrebarea epocii agenților va fi: „Ce sunt dispus să îl las să facă?”</div>
+
+  <h2>Surse și lecturi recomandate</h2>
+  <ol class="sources">
+    <li><a href="https://openai.com/index/chatgpt-for-your-most-ambitious-work/" target="_blank" rel="noopener">OpenAI — ChatGPT is now a partner for your most ambitious work</a></li>
+    <li><a href="https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex" target="_blank" rel="noopener">OpenAI Help — ChatGPT Work and Codex</a></li>
+    <li><a href="https://help.openai.com/en/articles/20001277-using-the-built-in-browser-in-the-chatgpt-desktop-app" target="_blank" rel="noopener">OpenAI Help — Using the built-in browser in the ChatGPT desktop app</a></li>
+    <li><a href="https://developers.openai.com/codex/enterprise/chatgpt-work-overview" target="_blank" rel="noopener">OpenAI — ChatGPT Work Overview</a></li>
+    <li><a href="https://openai.com/index/prompt-injections/" target="_blank" rel="noopener">OpenAI — Understanding prompt injections</a></li>
+    <li><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/technical-performance" target="_blank" rel="noopener">Stanford HAI — AI Index 2026: Technical Performance</a></li>
+    <li><a href="https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026" target="_blank" rel="noopener">International AI Safety Report 2026</a></li>
+    <li><a href="https://arxiv.org/html/2503.14499v3" target="_blank" rel="noopener">METR — Measuring AI Ability to Complete Long Software Tasks</a></li>
+    <li><a href="https://oecd.ai/en/wonk/what-agentic-ai-is-and-does" target="_blank" rel="noopener">OECD.AI — Understanding agentic AI</a></li>
+    <li><a href="https://oecd.ai/en/ai-publications/exploring-possible-ai-trajectories-through-2030" target="_blank" rel="noopener">OECD.AI — Exploring possible AI trajectories through 2030</a></li>
+    <li><a href="https://www.edpb.europa.eu/news/edpb-opinion-on-ai-models-gdpr-principles-support-responsible-ai_en" target="_blank" rel="noopener">European Data Protection Board — AI models and GDPR</a></li>
+    <li><a href="https://www.theverge.com/news/821948/microsoft-windows-11-ai-agents-taskbar-integration" target="_blank" rel="noopener">The Verge — Microsoft și direcția „agentic OS”</a></li>
+  </ol>
+
+  <p class="note"><strong>Notă metodologică:</strong> informațiile despre funcțiile actuale ale ChatGPT au fost verificate în documentația oficială disponibilă la 25 august 2026. Pentru tendințe și previziuni au fost folosite surse academice și instituționale. Predicțiile autorului sunt marcate explicit ca ipoteze și nu trebuie confundate cu fapte deja stabilite.</p>
+</main>
+
+<footer>
+  <div class="container">
+    <div>&copy; 2026 Andrei Geafer</div>
+    <div class="small">Educație Reflexivă</div>
+  </div>
+</footer>
+<script src="linkify.js" defer></script>
+</body>
+</html>
