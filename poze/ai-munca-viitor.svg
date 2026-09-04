@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="850" viewBox="0 0 1600 850" role="img" aria-labelledby="title desc">
+<title id="title">AI, muncă și viitorul omului</title>
+<desc id="desc">Ilustrație abstractă cu un om, o rețea AI și două direcții posibile pentru societate.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b2430"/><stop offset="0.55" stop-color="#0f766e"/><stop offset="1" stop-color="#42c6b4"/></linearGradient>
+  <radialGradient id="glow"><stop offset="0" stop-color="#ffffff" stop-opacity=".6"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1600" height="850" fill="url(#bg)"/>
+<circle cx="800" cy="390" r="330" fill="url(#glow)" opacity=".28"/>
+<g stroke="#bff7ee" stroke-width="4" opacity=".55">
+  <line x1="800" y1="280" x2="1050" y2="180"/><line x1="800" y1="280" x2="1120" y2="360"/><line x1="800" y1="280" x2="1010" y2="520"/>
+  <line x1="800" y1="280" x2="560" y2="180"/><line x1="800" y1="280" x2="480" y2="360"/><line x1="800" y1="280" x2="590" y2="530"/>
+</g>
+<g fill="#d9fff8">
+  <circle cx="800" cy="280" r="42"/><circle cx="1050" cy="180" r="20"/><circle cx="1120" cy="360" r="20"/><circle cx="1010" cy="520" r="20"/><circle cx="560" cy="180" r="20"/><circle cx="480" cy="360" r="20"/><circle cx="590" cy="530" r="20"/>
+</g>
+<g transform="translate(670 350)">
+  <circle cx="130" cy="80" r="58" fill="#fff"/>
+  <path d="M55 270c12-82 54-123 75-123s63 41 75 123" fill="#fff"/>
+</g>
+<g font-family="system-ui,Segoe UI,sans-serif" text-anchor="middle" fill="#ffffff">
+  <text x="800" y="690" font-size="58" font-weight="800">AI nu decide singur viitorul.</text>
+  <text x="800" y="748" font-size="32" opacity=".94">Proprietatea, educația și instituțiile decid cine beneficiază.</text>
+</g>
+</svg>
